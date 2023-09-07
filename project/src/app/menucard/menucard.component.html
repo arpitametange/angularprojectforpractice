@@ -1,0 +1,48 @@
+<div class="row ">
+  <div class="col-12">
+  <nav class="navbar shadow navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand"  routerLink="/menucard"><img style="width: 80px; height:50px;" src="https://logolook.net/wp-content/uploads/2023/04/Swiggy-Emblem.png" alt=""></a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/home">Home<span class="sr-only"></span></a>
+        </li>
+        
+       
+      </ul>
+      <form class="form my-2 ">
+        <span routerLink="/search"><button class="btn btn-light" >Go For Search</button></span>
+  
+      </form>
+      <button routerLink="/addtocard" class="btn btn-primary byn   mx-md-4"><i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+        <div style="font-size: 15px;" class="badge bg-danger">{{totalength}}</div>
+        </button>
+    </div>
+  </nav>
+</div>
+<!-- <div  class="col-12"><router-outlet></router-outlet> -->
+<!-- </div> -->
+</div>
+
+<!-- main content -->
+<h1 style=" color: rgb(236, 84, 18); text-align: center; font-family: 'Lobster', cursive;" class="my-2">Cheese Factory</h1>
+<div class="container row col-12" style="display: flex; justify-content: space-around;">
+    <ng-container *ngFor="let r of menu ">
+  <div class="card " style="width: 18rem;">
+  <img class="card-img-top  shadow"[src]="r.food.image" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title " style="font-family: 'Playfair Display SC', serif;">{{r.food.label}}</h5>
+    <p class="card-text">{{r.food.category}}</p>
+    <p>Fat:{{r.food.nutrients.FAT}},Procnt:{{r.food.nutrients.PROCNT}},Calories:{{r.food.nutrients.ENERC_KCAL}}</p>
+    <a routerLink="/payment" class="btn btn-outline-light"   style="background-color: rgb(236, 84, 18);;">Buy-now</a>
+    <button (click)="addtocart(r)"  class="btn btn-outline-light"  style="background-color: rgb(236, 84, 18);;">Add to card</button>
+
+  </div>
+</div>
+</ng-container>
+
+</div>

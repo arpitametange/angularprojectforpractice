@@ -1,0 +1,67 @@
+{
+  "user": {
+    "first": "arpita",
+    "last": "s"
+  },
+  "card": {
+    "item": {
+      "food": {
+        "foodId": "food_bzaenytbm02cd4br159f4biv49jc",
+        "uri": "http://www.edamam.com/ontologies/edamam.owl#Food_01003",
+        "label": "Butter Oil, Anhydrous",
+        "knownAs": "Butter oil, anhydrous",
+        "nutrients": {
+          "ENERC_KCAL": 876,
+          "PROCNT": 0.28,
+          "FAT": 99.5,
+          "CHOCDF": 0,
+          "FIBTG": 0
+        },
+        "category": "Generic foods",
+        "categoryLabel": "food",
+        "image": "https://www.edamam.com/food-img/2b5/2b504c036c64481b224c9d74cc4a82e0.jpg"
+      },
+      "measures": [
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_tablespoon",
+          "label": "Tablespoon",
+          "weight": 12.8
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_cup",
+          "label": "Cup",
+          "weight": 205
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_gram",
+          "label": "Gram",
+          "weight": 1
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_ounce",
+          "label": "Ounce",
+          "weight": 28.349523125
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_pound",
+          "label": "Pound",
+          "weight": 453.59237
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_serving",
+          "label": "Serving",
+          "weight": 13
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_kilogram",
+          "label": "Kilogram",
+          "weight": 1000
+        },
+        {
+          "uri": "http://www.edamam.com/ontologies/edamam.owl#Measure_default",
+          "weight": 0.0136
+        }
+      ]
+    }
+  }
+}

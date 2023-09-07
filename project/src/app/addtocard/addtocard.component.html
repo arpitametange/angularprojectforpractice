@@ -1,0 +1,20 @@
+<p>addtocard works!</p>
+<div class="container row col-12" >
+  <ng-container *ngIf="product.length !=0"   >
+
+    <ng-container *ngFor="let r of menu "  >
+  <div class="card  " style="width: 18rem;">
+  <img class="card-img-top  shadow"[src]="r.food.image" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title " style="font-family: 'Playfair Display SC', serif;">{{r.food.label}}</h5>
+    <p class="card-text">{{r.food.category}}</p>
+    <p>Fat:{{r.food.nutrients.FAT}} <br> Protein:{{r.food.nutrients.PROCNT}}<br> Calories:{{r.food.nutrients.ENERC_KCAL}}</p>
+    <a href="#" class="btn btn-outline-light" (click)="viewdetails()"   style="background-color: rgb(236, 84, 18);;">View details</a>
+    <a  class="btn btn-outline-light" (click)="removeItem(r.food.foodId)">Remove from card</a>
+
+  </div> 
+</div>
+</ng-container>
+</ng-container>
+
+</div>

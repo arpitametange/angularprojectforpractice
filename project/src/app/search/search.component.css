@@ -1,0 +1,19 @@
+.example-card {
+    max-width: 400px;
+
+    padding: 40px;
+    margin: 50px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://logolook.net/wp-content/uploads/2023/04/Swiggy-Emblem.png');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+  }
+  
+
+
+ 

@@ -1,0 +1,48 @@
+<h2 mat-dialog-title>SignUp To Swiggy</h2>
+<mat-dialog-content class="mat-typography">
+    <p>Create an account and Explore more</p>
+    <form class="example-form" #myform="ngForm" (ngSubmit)="onSubmit(myform)" >
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>First name</mat-label>
+            <input matInput name="First" #first ngModel>
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Create password</mat-label>
+            <input name="Last" #last matInput>
+          </mat-form-field></td>
+        </tr></table>
+      
+        <p>
+          <mat-form-field class="example-full-width">
+            <mat-label>Address</mat-label>
+            <textarea ngModel name="Address"  matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Address 2</mat-label>
+            <textarea name="Address" ngModel matInput></textarea>
+          </mat-form-field>
+        </p>
+      
+        <table class="example-full-width" cellspacing="0"><tr>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>City</mat-label>
+            <input  name="City" ngModel matInput placeholder="Ex. San Francisco">
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>State</mat-label>
+            <input matInput name="State" ngModel placeholder="Ex. California">
+          </mat-form-field></td>
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Postal Code</mat-label>
+            <input matInput type="text" name="postalCode" ngModel #postalCode maxlength="5" placeholder="Ex. 94105" value="94043">
+            <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+          </mat-form-field></td>
+        </tr></table>
+      </form>
+        
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" type="submit" (click)="openmenucard(first.value,last.value)" cdkFocusInitial>signup</button>
+</mat-dialog-actions>
